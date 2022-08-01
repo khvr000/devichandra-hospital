@@ -1,0 +1,110 @@
+@media only screen and (min-width: 768px) {
+    .medical-services-container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .medical-services-header-wrapper {
+
+    }
+
+    .service-item-image {
+        aspect-ratio: auto 580 / 360;
+    }
+
+    .header-title {
+        color: #3065b5;
+        font-size: 14px;
+    }
+
+    .header-text {
+        font-size: 24px;
+    }
+
+    .medical-services-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .service-item-wrapper {
+        padding: 0 10px;
+    }
+
+    img {
+        max-width: 293px;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+    }
+
+    .image-title {
+        color: #3065b5;
+        font-size: 18px;
+    }
+
+    .service-description {
+        font-size: 13px;
+        color: #787878;
+        padding-top: 14px;
+        border-top: 1px solid #e0e0e0;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .medical-services-container {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .medical-services-header-wrapper {
+        padding: 0 10px;
+    }
+
+    .service-item-image {
+        aspect-ratio: auto 580 / 360;
+    }
+
+    .header-title {
+        color: #3065b5;
+        font-size: 14px;
+    }
+
+    .header-text {
+        font-size: 24px;
+        padding-bottom: 75px;
+    }
+
+    .medical-services-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item-wrapper {
+        padding: 0 10px 60px 10px;
+    }
+
+    img {
+        max-width: 100%;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+    }
+
+    .image-title {
+        color: #3065b5;
+        font-size: 18px;
+    }
+
+    .service-description {
+        font-size: 13px;
+        color: #787878;
+        padding-top: 14px;
+        border-top: 1px solid #e0e0e0;
+        margin-top: 20px;
+    }
+}

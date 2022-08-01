@@ -4,6 +4,7 @@ import HospitalInformationComponent from "../Components/HospitalInformation/hosp
 import HospitalServicesInformationComponent from "../Components/HospitalServicesInformation/hospitalServicesnformation.component";
 import "./index.css";
 import "./index2.css";
+import MedicalServicesComponent from "../Components/MedicalServices/medicalServices.component";
 
 // styles
 const pageStyles = {
@@ -143,6 +144,7 @@ const IndexPage = () => {
         <GeneralInformationComponent />
         <HospitalInformationComponent />
         <HospitalServicesInformationComponent />
+        <MedicalServicesComponent />
       </p>
     </main>
   )
