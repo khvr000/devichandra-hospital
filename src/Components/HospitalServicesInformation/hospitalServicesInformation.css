@@ -1,0 +1,161 @@
+@media only screen and (min-width: 768px) {
+
+
+
+    .hospital-services-information-container {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+
+    .services-header-container {
+        padding: 0 20px 20px 20px;
+    }
+
+    .services-header-title-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .services-header-title {
+        font-size: 36px;
+        color: #3065b5;
+        margin: 0;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .services-header-content {
+        font-size: 20px;
+        color: #747474;
+        font-weight: 300;
+    }
+
+    .services-container {
+        display: flex;
+    }
+
+    .service-item-icon {
+        font-size: 50px;
+        color: #0392ce;
+        width: 90px;
+        height: 90px;
+    }
+
+    .cmsmasters-icon-custom-4:before {
+        content: '\e80d';
+    }
+
+    .cmsmasters-icon-custom-2:before {
+        content: '\e80b';
+    }
+
+    .cmsmasters-icon-custom-27:before {
+        content: '\e824';
+    }
+
+    .cmsmasters-icon-custom-6:before {
+        content: '\e80f';
+    }
+
+
+    .service-item {
+        padding: 20px;
+        color: #787878;
+    }
+
+    .service-item-title {
+        font-size: 22px;
+        font-weight: normal;
+        font-style: normal;
+        margin-bottom: 20px;
+        color: #222222;
+    }
+
+    .service-item-description {
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+    .hospital-services-information-container {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+
+    .services-header-container {
+        padding: 0 20px;
+    }
+
+    .services-header-title-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .services-header-title {
+        font-size: 36px;
+        color: #3065b5;
+        margin: 0;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .services-header-content {
+        font-size: 20px;
+        color: #747474;
+        font-weight: 300;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-item-icon {
+        font-size: 50px;
+        color: #0392ce;
+        width: 90px;
+        height: 90px;
+    }
+
+    .cmsmasters-icon-custom-4:before {
+        content: '\e80d';
+    }
+
+    .cmsmasters-icon-custom-2:before {
+        content: '\e80b';
+    }
+
+    .cmsmasters-icon-custom-27:before {
+        content: '\e824';
+    }
+
+    .cmsmasters-icon-custom-6:before {
+        content: '\e80f';
+    }
+
+
+    .service-item {
+        padding: 20px;
+        color: #787878;
+    }
+
+    .service-item-title {
+        font-size: 22px;
+        font-weight: normal;
+        font-style: normal;
+        margin-bottom: 20px;
+        color: #222222;
+    }
+
+    .service-item-description {
+        font-size: 13px;
+    }
+
+}
+
+
+

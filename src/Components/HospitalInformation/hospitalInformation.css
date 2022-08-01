@@ -1,0 +1,80 @@
+@media only screen and (min-width: 768px) {
+
+    .hospital-information-container {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .featured_block_inner {
+        width: 100%;
+        padding: 40px;
+        text-align: left;
+        margin: 0 auto;
+        color: #ffffff;
+        background-color: #3065B5;
+    }
+
+    .featured_block_inner:first-of-type {
+        background-color: #3EB8D7;
+    }
+
+    .featured_block_inner:nth-of-type(2) {
+        background-color: #2A92CE;
+    }
+
+    .title {
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 32px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .hospital-information-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .featured_block_inner {
+        padding: 40px;
+        text-align: left;
+        margin: 0 auto;
+        color: #ffffff;
+        background-color: #3065B5;
+    }
+
+    .featured_block_inner:first-of-type {
+        background-color: #3EB8D7;
+    }
+
+    .featured_block_inner:nth-of-type(2) {
+        background-color: #2A92CE;
+    }
+
+    .title {
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 32px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+}
