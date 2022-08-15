@@ -5,6 +5,7 @@ import HospitalServicesInformationComponent from "../Components/HospitalServices
 import "./index.css";
 import "./index2.css";
 import MedicalServicesComponent from "../Components/MedicalServices/medicalServices.component";
+import ClientTestimonialsComponent from "../Components/ClientTestimonials/ClientTestimonials.component";
 
 // styles
 const pageStyles = {
@@ -137,14 +138,15 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
       <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Welcome
-      </h1>
+      {/*<h1 style={headingStyles}>*/}
+      {/*  Welcome*/}
+      {/*</h1>*/}
       <p style={paragraphStyles}>
         <GeneralInformationComponent />
         <HospitalInformationComponent />
         <HospitalServicesInformationComponent />
         <MedicalServicesComponent />
+        <ClientTestimonialsComponent />
       </p>
     </main>
   )

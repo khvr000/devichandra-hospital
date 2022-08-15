@@ -1,0 +1,288 @@
+@media only screen and (min-width: 768px) {
+
+    .main-container {
+        background-image: url(https://medical-clinic.cmsmasters.net/wp-content/uploads/2015/11/2parallax.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
+        width: 100%;
+    }
+
+    .client-testimonials-container {
+        width: 1200px;
+        margin: 60px auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .ct-header-wrapper {
+        padding: 30px 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        color: rgba(255,255,255,0.6);
+    }
+
+    .header-text {
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        color: #ffffff;
+    }
+
+    .client-testimonials-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .testimonial-item {
+        margin: 0 20px;
+        padding-bottom: 55px;
+    }
+
+    .testimonial-item-header {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 90px;
+        background-color: #3eb8d7;
+        position: relative;
+        min-height: 65px;
+        box-sizing: border-box;
+    }
+
+    .testimonial-item-header::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-top: 0 solid transparent !important;
+        border-left: 6px solid transparent !important;
+        border-right: 6px solid transparent !important;
+        border-bottom-width: 7px;
+        border-bottom-style: solid;
+        bottom: 0px;
+        left: 86px;
+        right: auto;
+        z-index: 10;
+        border-color: #ffffff;
+    }
+
+    .testimonial-item:nth-child(2) .testimonial-item-header {
+        background-color: #0392ce;
+    }
+
+    .testimonial-item:nth-child(3) .testimonial-item-header {
+        background-color: #3065b5;
+    }
+
+    .testimonial-item-header-photo {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+
+    .testimonial-item-header-title {
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .testimonial-item-header-text {
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    .testimonial-item-header-content {
+        display: block;
+        padding: 0;
+        text-align: left;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+    }
+
+    .testimonial-item-content {
+        margin: 0;
+        padding: 26px 22px 28px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: #e0e0e0;
+        background-color: #fcfcfc;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .testimonial-item-content::before {
+        content: '\201C';
+        margin: 0 20px -10px 0;
+        font-size: 35px;
+        line-height: 35px;
+        float: left;
+    }
+
+    .testimonial-item-content > p {
+        line-height: 28px;
+        margin: 0;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .main-container {
+        background-image: url(https://medical-clinic.cmsmasters.net/wp-content/uploads/2015/11/2parallax.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
+        width: 100%;
+    }
+
+    .client-testimonials-container {
+        width: 100%;
+        margin: 30px auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .ct-header-wrapper {
+        padding: 30px 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        color: rgba(255,255,255,0.6);
+    }
+
+    .header-text {
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        color: #ffffff;
+    }
+
+    .client-testimonials-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .testimonial-item {
+        margin: 0 20px;
+        padding-bottom: 55px;
+    }
+
+    .testimonial-item-header {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 90px;
+        background-color: #3eb8d7;
+        position: relative;
+        min-height: 65px;
+        box-sizing: border-box;
+    }
+
+    .testimonial-item-header::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-top: 0 solid transparent !important;
+        border-left: 6px solid transparent !important;
+        border-right: 6px solid transparent !important;
+        border-bottom-width: 7px;
+        border-bottom-style: solid;
+        bottom: 0px;
+        left: 86px;
+        right: auto;
+        z-index: 10;
+        border-color: #ffffff;
+    }
+
+    .testimonial-item:nth-child(2) .testimonial-item-header {
+        background-color: #0392ce;
+    }
+
+    .testimonial-item:nth-child(3) .testimonial-item-header {
+        background-color: #3065b5;
+    }
+
+    .testimonial-item-header-photo {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+
+    .testimonial-item-header-title {
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    .testimonial-item-header-text {
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    .testimonial-item-header-content {
+        display: block;
+        padding: 0;
+        text-align: left;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+    }
+
+    .testimonial-item-content {
+        margin: 0;
+        padding: 26px 22px 28px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: #e0e0e0;
+        background-color: #fcfcfc;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .testimonial-item-content::before {
+        content: '\201C';
+        margin: 0 20px -10px 0;
+        font-size: 35px;
+        line-height: 35px;
+        float: left;
+    }
+
+    .testimonial-item-content > p {
+        line-height: 28px;
+        margin: 0;
+    }
+}
