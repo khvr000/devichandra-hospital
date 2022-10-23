@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import "./GeneralInformation.css";
+import classnames from 'classnames';
 
 const infoComponentStyles = {
     display: 'flex',
@@ -17,17 +18,20 @@ class GeneralInformationComponent extends Component {
         {
             icon: 'cmsmasters-icon-phone-4',
             headerText: 'Give us a Call',
-            value: '1-888-123-14567'
+            value: '9848421036, 9848506111',
+            className: 'call',
         },
         {
             icon: 'cmsmasters-icon-mail-3',
             headerText: 'Send us a Message',
-            value: 'medical-clinic@mail.com'
+            value: 'sreedevichandrahospital@gmail.com',
+            className: 'email',
         },
         {
             icon: 'cmsmasters-icon-location-3',
             headerText: 'Visit our Location',
-            value: '3213 Suitland Street'
+            value: 'Shashabgutta, Mahabubnagar',
+            className: 'location',
         },
     ];
 
@@ -40,7 +44,7 @@ class GeneralInformationComponent extends Component {
                     <div className="info-item-header-text">
                         {infoItem.headerText}
                     </div>
-                    <div className="info-item-header-value">
+                    <div className={classnames('info-item-header-value', infoItem.className)}>
                         {infoItem.value}
                     </div>
                 </div>

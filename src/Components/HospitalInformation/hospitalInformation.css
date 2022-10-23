@@ -35,6 +35,14 @@
         font-size: 13px;
     }
 
+    .timings-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
 }
 
 
@@ -54,7 +62,7 @@
     .featured_block_inner {
         padding: 40px;
         text-align: left;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         color: #ffffff;
         background-color: #3065B5;
     }
@@ -75,6 +83,14 @@
 
     .description {
         font-size: 13px;
+    }
+
+    .timings-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px;
+        border-bottom: 1px solid rgba(255,255,255,.2);
     }
 
 }
