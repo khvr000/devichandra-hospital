@@ -90,7 +90,7 @@ infrastructure & staff.From BANAWAT RAMESH BHIMA R/o. Kosgi Mandal District Nara
                                 {/*</div>*/}
                                 <div className="testimonial-item-header-content">
                                     <div className="testimonial-item-header-title">
-                                        Vanessa Adams
+                                        G Shiva
                                     </div>
                                     {/*<div className="testimonial-item-header-text">*/}
                                     {/*    Businessman*/}
@@ -124,7 +124,7 @@ infrastructure & staff.From BANAWAT RAMESH BHIMA R/o. Kosgi Mandal District Nara
                                 {/*</figure>*/}
                                 <div className="testimonial-item-header-content">
                                     <div className="testimonial-item-header-title">
-                                        Vanessa Adams
+                                        Dadabasha Shaik
                                     </div>
                                     {/*<div className="testimonial-item-header-text">*/}
                                     {/*    Businessman*/}
