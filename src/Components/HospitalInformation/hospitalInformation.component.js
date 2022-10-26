@@ -23,10 +23,17 @@ class HospitalInformationComponent extends Component {
             <div className="hospital-information-container">
                 <div className="featured_block_inner">
                     <div className="title">
-                        Top Doctors
+                        Opening Hours
                     </div>
                     <div className="description">
-                        With experience of over 30 years, our hospital strives for excellence with the best class treatment & modern technology, we offer the best treatment at the most affordable prices.
+                        <div className="timings-text">
+                            <span>Monday - Saturday</span>
+                            <span> 9 AM - 9 PM </span>
+                        </div>
+                        <div className="timings-text">
+                            <span>Sunday</span>
+                            <span>8 AM  - 5 PM</span>
+                        </div>
                     </div>
                 </div>
                 <div className="featured_block_inner">
@@ -39,17 +46,10 @@ class HospitalInformationComponent extends Component {
                 </div>
                 <div className="featured_block_inner">
                     <div className="title">
-                        Opening Hours
+                        Top Doctors
                     </div>
                     <div className="description">
-                        <div className="timings-text">
-                            <span>Monday - Saturday</span>
-                            <span>8.00 - 17.00</span>
-                        </div>
-                        <div className="timings-text">
-                            <span>Sunday</span>
-                            <span>8.00 - 5.00</span>
-                        </div>
+                        With experience of over 30 years, our hospital strives for excellence with the best class treatment & modern technology, we offer the best treatment at the most affordable prices.
                     </div>
                 </div>
             </div>

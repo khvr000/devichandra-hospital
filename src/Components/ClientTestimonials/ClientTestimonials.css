@@ -33,9 +33,10 @@
 
     .header-text {
         font-size: 24px;
-        font-weight: normal;
+        /*font-weight: normal;*/
         font-style: normal;
         color: #ffffff;
+        font-weight: 700;
     }
 
     .client-testimonials-content {
@@ -49,6 +50,7 @@
     .testimonial-item {
         margin: 0 20px;
         padding-bottom: 55px;
+        min-width: 350px;
     }
 
     .testimonial-item-header {
@@ -94,8 +96,9 @@
     }
 
     .testimonial-item-header-title {
-        font-size: 18px;
+        font-size: 20px;
         color: #ffffff;
+        font-weight: 600;
     }
 
     .testimonial-item-header-text {
@@ -124,10 +127,12 @@
         background-color: #fcfcfc;
         line-height: 28px;
         font-size: 14px;
+        height: 387px;
+        overflow: auto;
     }
 
     .testimonial-item-content::before {
-        content: '\201C';
+        /*content: '\201C';*/
         margin: 0 20px -10px 0;
         font-size: 35px;
         line-height: 35px;
@@ -137,6 +142,52 @@
     .testimonial-item-content > p {
         line-height: 28px;
         margin: 0;
+    }
+
+    .rating-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 8px;
+    }
+
+    .rating-star {
+        color: #ffbf36;
+        display: flex;
+        align-items: center;
+    }
+
+    .rating-wrapper {
+        position: relative;
+        padding: 24px 0;
+    }
+
+    .rating-provider {
+        position: absolute;
+        top: -3px;
+    }
+
+    .rating-provider-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .hospital-rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        background-color: #f1f1f1;
+        margin: 10px auto;
+    }
+
+    .hospital-rating-google, .hospital-rating-justdail {
+        display: flex;
+        align-items: center;
+    }
+
+    .hospital-rating-google-name, .hospital-rating-justdail-name {
+        margin-right: 20px;
     }
 
 
@@ -284,5 +335,9 @@
     .testimonial-item-content > p {
         line-height: 28px;
         margin: 0;
+    }
+
+    .rating-star {
+        color: yellow !important;
     }
 }

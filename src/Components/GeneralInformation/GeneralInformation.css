@@ -48,11 +48,12 @@
     .info-item-header-value {
         color: #2a2d32;
         font-size: 20px;
+        word-break: break-word;
     }
 
-    .email {
-        font-size: 16px;
-    }
+    /*.email {*/
+    /*    font-size: 16px;*/
+    /*}*/
 
 }
 
@@ -104,10 +105,11 @@
     .info-item-header-value {
         color: #2a2d32;
         font-size: 20px;
+        word-break: break-all;
     }
 
-    .email {
-        font-size: 16px;
-    }
+    /*.email {*/
+    /*    font-size: 16px;*/
+    /*}*/
 }
 

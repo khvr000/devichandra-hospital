@@ -145,7 +145,7 @@ const IndexPage = () => {
         <GeneralInformationComponent />
         <HospitalInformationComponent />
         {/*<HospitalServicesInformationComponent />*/}
-        <MedicalServicesComponent />
+        {/*<MedicalServicesComponent />*/}
         <ClientTestimonialsComponent />
       </p>
     </main>

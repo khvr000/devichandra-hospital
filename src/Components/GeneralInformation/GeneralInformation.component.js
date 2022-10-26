@@ -35,10 +35,14 @@ class GeneralInformationComponent extends Component {
         },
     ];
 
+    handleLocationClick = () => {
+        window.open('https://goo.gl/maps/wXKrHwgLzmvg74cF6', '_blank').focus();
+    }
+
 
     infoComponent = (infoItem) => {
         return (
-            <div className="info-component-container">
+            <div className="info-component-container" onClick={this.handleLocationClick}>
                 <div className={`icon-wrapper ${infoItem.icon}`} />
                 <div className="info-item-content-wrapper">
                     <div className="info-item-header-text">
