@@ -6,6 +6,7 @@ import "./index.css";
 import "./index2.css";
 import MedicalServicesComponent from "../Components/MedicalServices/medicalServices.component";
 import ClientTestimonialsComponent from "../Components/ClientTestimonials/ClientTestimonials.component";
+import HospitalStatsComponent from "../Components/HospitalStats/hospitalStats.component";
 
 // styles
 const pageStyles = {
@@ -147,6 +148,7 @@ const IndexPage = () => {
         {/*<HospitalServicesInformationComponent />*/}
         {/*<MedicalServicesComponent />*/}
         <ClientTestimonialsComponent />
+        <HospitalStatsComponent />
       </p>
     </main>
   )
