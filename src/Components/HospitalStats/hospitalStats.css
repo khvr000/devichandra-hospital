@@ -1,6 +1,6 @@
 @media only screen and (min-width: 768px) {
     .stats-container {
-        width: 100vw;
+        width: 100%;
         box-sizing: border-box;
         margin: 0 auto;
         background-color: #0392ce;

@@ -7,6 +7,10 @@ import "./index2.css";
 import MedicalServicesComponent from "../Components/MedicalServices/medicalServices.component";
 import ClientTestimonialsComponent from "../Components/ClientTestimonials/ClientTestimonials.component";
 import HospitalStatsComponent from "../Components/HospitalStats/hospitalStats.component";
+import FaqComponent from "../Components/Faq/Faq.component";
+import GalleryComponent from "../Components/Gallery/gallery.component";
+import SeparatorComponent from "../Components/separator/separator.component";
+import LocationComponent from "../Components/Location/location.component";
 
 // styles
 const pageStyles = {
@@ -149,6 +153,11 @@ const IndexPage = () => {
         {/*<MedicalServicesComponent />*/}
         <ClientTestimonialsComponent />
         <HospitalStatsComponent />
+        <GalleryComponent />
+        <SeparatorComponent />
+        <FaqComponent />
+        <SeparatorComponent />
+        <LocationComponent />
       </p>
     </main>
   )

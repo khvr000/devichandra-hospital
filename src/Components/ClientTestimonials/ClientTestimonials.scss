@@ -40,17 +40,20 @@
     }
 
     .client-testimonials-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        //display: flex;
+        //align-items: center;
+        //justify-content: space-between;
         width: 1200px;
-        margin: 0 auto;
+        margin: 30px auto 0;
+        position: relative;
+        height: 550px;
+        overflow: hidden;
     }
 
     .testimonial-item {
         margin: 0 20px;
         padding-bottom: 55px;
-        min-width: 350px;
+        width: 350px;
     }
 
     .testimonial-item-header {
@@ -79,13 +82,13 @@
         border-color: #ffffff;
     }
 
-    .testimonial-item:nth-child(2) .testimonial-item-header {
-        background-color: #0392ce;
-    }
-
-    .testimonial-item:nth-child(3) .testimonial-item-header {
-        background-color: #3065b5;
-    }
+    //.testimonial-item:nth-child(2) .testimonial-item-header {
+    //    background-color: #0392ce;
+    //}
+    //
+    //.testimonial-item:nth-child(3) .testimonial-item-header {
+    //    background-color: #3065b5;
+    //}
 
     .testimonial-item-header-photo {
         position: absolute;
@@ -129,6 +132,25 @@
         font-size: 14px;
         height: 387px;
         overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            position: absolute;
+            right: 0;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
     }
 
     .testimonial-item-content::before {
@@ -144,41 +166,45 @@
         margin: 0;
     }
 
-    .rating-container {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        padding-bottom: 8px;
+    .testimonial-item-content {
+        .rating-wrapper {
+            position: relative;
+            padding: 24px 0;
+        }
+
+        .rating-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 8px;
+        }
+
+        .rating-star {
+            color: #ffbf36;
+            display: flex;
+            align-items: center;
+        }
+
+        .rating-provider {
+            position: absolute;
+            top: -3px;
+        }
+
+        .rating-provider-image {
+            width: 75px;
+            height: 75px;
+        }
     }
 
-    .rating-star {
-        color: #ffbf36;
-        display: flex;
-        align-items: center;
-    }
-
-    .rating-wrapper {
-        position: relative;
-        padding: 24px 0;
-    }
-
-    .rating-provider {
-        position: absolute;
-        top: -3px;
-    }
-
-    .rating-provider-image {
-        width: 75px;
-        height: 75px;
-    }
 
     .hospital-rating {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 500px;
-        background-color: #f1f1f1;
+        width: 542px;
+        background-color: #ffffff;
         margin: 10px auto;
+        opacity: 0.85;
     }
 
     .hospital-rating-google, .hospital-rating-justdail {
@@ -187,8 +213,101 @@
     }
 
     .hospital-rating-google-name, .hospital-rating-justdail-name {
-        margin-right: 20px;
+        margin: 0 10px;
     }
+
+    .hospital-rating-google-name {
+        display: flex;
+        .rating-provider-image {
+            width: 86px;
+            height: 35px;
+        }
+    }
+
+    .hospital-rating-justdail-name {
+        margin-left: 16px;
+        display: flex;
+        .rating-provider-image {
+            //width: 60px;
+            //height: 24px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+
+
+    .hospital-rating-justdail, .hospital-rating-google {
+        .actual-rating {
+            padding: 12px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #008c41;
+            outline: #008c41 solid 1px;
+        }
+
+        //.rating-provider-image {
+        //    width: 40px;
+        //    height: 40px;
+        //}
+
+        .rating-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-left: 8px;
+            padding-bottom: 0;
+
+            .rating-star {
+                color: #e95c29;
+            }
+        }
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 9;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    .horizontal-separator {
+             width: 1px;
+             height: 100%;
+             margin: 0 1.6rem;
+             border-radius: 1px;
+             background-color: #ffffff;
+    }
+
 
 
 
@@ -352,6 +471,58 @@
     .rating-provider-image {
         width: 75px;
         height: 75px;
+    }
+
+    .hospital-rating-google, .hospital-rating-justdail {
+        display: flex;
+        align-items: center;
+    }
+
+    .hospital-rating-google-name {
+        display: flex;
+        .rating-provider-image {
+            width: 86px;
+            height: 35px;
+        }
+    }
+
+    .hospital-rating-justdail-name {
+        margin-left: 16px;
+        display: flex;
+        .rating-provider-image {
+            //width: 60px;
+            //height: 24px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .hospital-rating-justdail, .hospital-rating-google {
+        .actual-rating {
+            padding: 12px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #008c41;
+            outline: #008c41 solid 1px;
+        }
+
+        //.rating-provider-image {
+        //    width: 40px;
+        //    height: 40px;
+        //}
+
+        .rating-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-left: 8px;
+            padding-bottom: 0;
+
+            .rating-star {
+                color: #e95c29;
+            }
+        }
     }
 
 

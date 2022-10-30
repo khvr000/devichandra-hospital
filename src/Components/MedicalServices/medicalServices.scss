@@ -30,14 +30,16 @@
 
     .service-item-wrapper {
         padding: 0 10px;
+
+        img {
+            max-width: 293px;
+            box-sizing: border-box;
+            width: auto;
+            height: auto;
+        }
     }
 
-    img {
-        max-width: 293px;
-        box-sizing: border-box;
-        width: auto;
-        height: auto;
-    }
+
 
     .image-title {
         color: #3065b5;
