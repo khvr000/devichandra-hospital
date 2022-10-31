@@ -51,6 +51,7 @@ class GalleryComponent extends Component {
             <>
                 <div className="gallery-container">
                     <div className="gallery-title-wrapper">
+                        <a href="" className="gallery-title-helper">Snaps</a>
                         <div className="gallery-title">Gallery</div>
                     </div>
                     <div className="gallery-wrapper">

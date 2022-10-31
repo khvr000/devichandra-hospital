@@ -11,6 +11,9 @@ import FaqComponent from "../Components/Faq/Faq.component";
 import GalleryComponent from "../Components/Gallery/gallery.component";
 import SeparatorComponent from "../Components/separator/separator.component";
 import LocationComponent from "../Components/Location/location.component";
+import PartnersComponent from "../Components/Partners/partners.component";
+import TopMenuComponent from "../Components/TopMenu/topMenu.component";
+import IntroductoryImagesComponent from "../Components/IntroductoryImages/IntroductoryImages.component";
 
 // styles
 const pageStyles = {
@@ -27,7 +30,6 @@ const headingAccentStyles = {
   color: "#663399",
 }
 const paragraphStyles = {
-  marginBottom: 48,
 }
 const codeStyles = {
   color: "#8A6534",
@@ -146,7 +148,10 @@ const IndexPage = () => {
       {/*<h1 style={headingStyles}>*/}
       {/*  Welcome*/}
       {/*</h1>*/}
-      <p style={paragraphStyles}>
+      <div style={paragraphStyles}>
+        <TopMenuComponent />
+        <IntroductoryImagesComponent />
+        {/*<SeparatorComponent />*/}
         <GeneralInformationComponent />
         <HospitalInformationComponent />
         {/*<HospitalServicesInformationComponent />*/}
@@ -158,7 +163,9 @@ const IndexPage = () => {
         <FaqComponent />
         <SeparatorComponent />
         <LocationComponent />
-      </p>
+        <SeparatorComponent />
+        <PartnersComponent />
+      </div>
     </main>
   )
 }

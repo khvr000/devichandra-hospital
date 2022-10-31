@@ -29,28 +29,27 @@ class FaqComponent extends Component {
 
     render() {
         return (
-            <div>
-                <div className="faq-container">
-                    <div className="faq-title-wrapper">
-                        <a className="faq-heading">
-                            FAQ
-                        </a>
-                        <div className="faq-title-description">
-                            Have Some Questions?
-                        </div>
-                    </div>
-
-                    <div className="faq-content">
-                        {this.data.map(dataItem => (
-                            <FaqItemComponent
-                                question={dataItem.question}
-                                description={dataItem.description}
-                            />
-                        ))}
-
+            <div className="faq-container">
+                <div className="faq-title-wrapper">
+                    <a className="faq-heading">
+                        FAQ
+                    </a>
+                    <div className="faq-title-description">
+                        Have Some Questions?
                     </div>
                 </div>
+
+                <div className="faq-content">
+                    {this.data.map(dataItem => (
+                        <FaqItemComponent
+                            question={dataItem.question}
+                            description={dataItem.description}
+                        />
+                    ))}
+
+                </div>
             </div>
+
         );
     }
 }

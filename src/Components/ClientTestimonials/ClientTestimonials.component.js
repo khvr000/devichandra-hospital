@@ -164,14 +164,15 @@ class ClientTestimonialsComponent extends Component {
                 <div className="client-testimonials-content">
                     <a className="prev" onClick={() => this.handleSliderClick('prev')}>❮</a>
                     <a className="next" onClick={() => this.handleSliderClick('next')}>❯</a>
-                    {this.data.map((dataItem, index) => (
+                    {filteredData.map((dataItem, index) => (
                         <article
                             className="testimonial-item fade"
                             onClick={() => this.handleTestimonialClick(dataItem.url)}
+                            key={dataItem.url}
                             style={{
                                 position: 'absolute',
-                                left: (visibleIndices.indexOf(index))*400 - 400,
-                                transition: 'left 1s linear',
+                                left: (index)*400 - 400,
+                                transition: 'left 0.2s ease-in',
                                 overflow: "hidden"
                             }}
                         >
