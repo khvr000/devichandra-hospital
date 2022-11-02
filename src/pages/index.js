@@ -183,13 +183,13 @@ const IndexPage = () => {
   )
 }
 
-const highlightNavigation = () => {
-  var scrollPosition = window.scrollTop();
-  console.log(scrollPosition);
+// const highlightNavigation = () => {
+//   var scrollPosition = window.scrollTop();
+//   console.log(scrollPosition);
+//
+// }
 
-}
 
-
-window.scroll(highlightNavigation);
+// window.scroll(highlightNavigation);
 
 export default IndexPage
