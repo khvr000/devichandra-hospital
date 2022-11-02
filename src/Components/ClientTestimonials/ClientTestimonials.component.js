@@ -119,7 +119,7 @@ class ClientTestimonialsComponent extends Component {
         const filteredData = this.getFilteredData();
         const { visibleIndices } = this.state;
         return (
-            <div className="main-container">
+            <div className="main-container" id="testimonials">
                 <div className="client-testimonials-container">
                 <div className="ct-header-wrapper">
                     {/*<div className="header-title">*/}

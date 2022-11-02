@@ -1,0 +1,56 @@
+
+@media only screen and (min-width: 768px) {
+
+  .about-doctor-container {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+
+      .about-doctor-title-wrapper {
+        margin-bottom: 16px;
+          .about-doctor-title {
+            font-size: 24px;
+            font-weight: 400;
+          }
+      }
+
+      .about-doctor-content {
+          display: flex;
+          align-items: flex-start;
+        .about-doctor-intro-wrapper {
+            width: 50%;
+
+            .about-doctor-intro-title {
+                font-size: 20px;
+                margin-bottom: 16px;
+                font-weight: 500;
+            }
+
+            .about-doctor-description {
+              margin-right: 24px;
+              word-break: break-word;
+              line-height: 1.8;
+            }
+
+        }
+
+        .about-doctor-intro-images {
+            height: 400px;
+            width: 50%;
+            padding: 8px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+        }
+
+      }
+  }
+
+
+
+}

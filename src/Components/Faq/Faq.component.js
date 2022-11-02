@@ -29,7 +29,7 @@ class FaqComponent extends Component {
 
     render() {
         return (
-            <div className="faq-container">
+            <div className="faq-container" id="faq">
                 <div className="faq-title-wrapper">
                     <a className="faq-heading">
                         FAQ

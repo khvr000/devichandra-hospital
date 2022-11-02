@@ -35,7 +35,7 @@ class PartnersComponent extends Component {
 
     render() {
         return (
-            <div className="partners-container">
+            <div className="partners-container" id="partners">
                     <div className="partners-title-wrapper">
                         <a href="" className="partners-title-helper">Empanelment</a>
                         <div className="partners-title">Our Partners</div>

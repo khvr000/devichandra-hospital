@@ -49,7 +49,7 @@ class GalleryComponent extends Component {
 
         return (
             <>
-                <div className="gallery-container">
+                <div className="gallery-container" id="gallery">
                     <div className="gallery-title-wrapper">
                         <a href="" className="gallery-title-helper">Snaps</a>
                         <div className="gallery-title">Gallery</div>

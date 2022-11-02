@@ -24,7 +24,7 @@ class IntroductoryImagesComponent extends Component {
 
     render() {
         return (
-            <div className="introductory-container">
+            <div className="introductory-container" id="home">
 
                 {this.state.initial ? (
                         <div key="one">

@@ -18,6 +18,8 @@
     overflow: hidden;
     //flex-wrap: wrap;
 
+    //animation: 4s linear 0s infinite normal none running partner-animation;
+
     .partners-content-item {
       width: 20%;
       img {
@@ -29,3 +31,12 @@
 
 }
 
+@keyframes partner-animation {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-1200px);
+  }
+}

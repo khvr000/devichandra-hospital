@@ -14,6 +14,8 @@ import LocationComponent from "../Components/Location/location.component";
 import PartnersComponent from "../Components/Partners/partners.component";
 import TopMenuComponent from "../Components/TopMenu/topMenu.component";
 import IntroductoryImagesComponent from "../Components/IntroductoryImages/IntroductoryImages.component";
+import AboutDoctorComponent from "../Components/AboutDoctor/aboutDoctor.component";
+import {useRef} from "react";
 
 // styles
 const pageStyles = {
@@ -139,6 +141,8 @@ const links = [
   },
 ]
 
+// const section1Ref = useRef();
+
 // markup
 const IndexPage = () => {
   return (
@@ -155,7 +159,10 @@ const IndexPage = () => {
         <GeneralInformationComponent />
         <HospitalInformationComponent />
         {/*<HospitalServicesInformationComponent />*/}
-        {/*<MedicalServicesComponent />*/}
+        <SeparatorComponent />
+        <MedicalServicesComponent />
+        <SeparatorComponent />
+        <AboutDoctorComponent />
         <ClientTestimonialsComponent />
         <HospitalStatsComponent />
         <GalleryComponent />
@@ -165,9 +172,24 @@ const IndexPage = () => {
         <LocationComponent />
         <SeparatorComponent />
         <PartnersComponent />
+        <div className="footer">
+          <div className="footer-desc">
+            Copyrights 2022 - 2023, Sri Devichandra ENT Hospital. All Rights Reserved.
+          </div>
+
+        </div>
       </div>
     </main>
   )
 }
+
+const highlightNavigation = () => {
+  var scrollPosition = window.scrollTop();
+  console.log(scrollPosition);
+
+}
+
+
+window.scroll(highlightNavigation);
 
 export default IndexPage
