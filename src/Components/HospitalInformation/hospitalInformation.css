@@ -29,10 +29,13 @@
         font-size: 24px;
         color: #ffffff;
         margin-bottom: 32px;
+        font-weight: 600;
     }
 
     .description {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 600;
     }
 
     .timings-text {
@@ -65,6 +68,7 @@
         /*margin: 0 auto;*/
         color: #ffffff;
         background-color: #3065B5;
+        /*line-height: 1.5;*/
     }
 
     .featured_block_inner:first-of-type {

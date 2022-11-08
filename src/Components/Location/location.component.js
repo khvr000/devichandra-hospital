@@ -12,9 +12,9 @@ class LocationComponent extends Component {
     render() {
         return (
             <div className="location-container">
-                <a className="location-title-helper" href="https://goo.gl/maps/wXKrHwgLzmvg74cF6">
+                <div className="location-title-helper" onClick={this.handleLocationImageClick}>
                   Google Maps
-                </a>
+                </div>
                 <div className="location-title">
                     Our Location
                 </div>

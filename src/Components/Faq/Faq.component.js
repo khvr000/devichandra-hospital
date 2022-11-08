@@ -31,9 +31,9 @@ class FaqComponent extends Component {
         return (
             <div className="faq-container" id="faq">
                 <div className="faq-title-wrapper">
-                    <a className="faq-heading">
+                    <div className="faq-heading">
                         FAQ
-                    </a>
+                    </div>
                     <div className="faq-title-description">
                         Have Some Questions?
                     </div>

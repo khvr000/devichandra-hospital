@@ -8,6 +8,7 @@ class ClientTestimonialsComponent extends Component {
 
     state = {
         visibleIndices: [0, 1, 2, 3, 4],
+        isMobileView: false
     }
 
     data = [
@@ -117,7 +118,10 @@ class ClientTestimonialsComponent extends Component {
     render() {
 
         const filteredData = this.getFilteredData();
-        const { visibleIndices } = this.state;
+
+        const mql = window.matchMedia('(max-width: 768px)');
+        let mobileView = mql.matches;
+
         return (
             <div className="main-container" id="testimonials">
                 <div className="client-testimonials-container">
@@ -186,7 +190,11 @@ class ClientTestimonialsComponent extends Component {
                             <div className="testimonial-item-content">
                                 <div className="rating-wrapper">
                                     <div className="rating-provider">
-                                        <img className="rating-provider-image" src="https://raosentcare.com/wp-content/uploads/2021/07/google-reviews1-150x150.jpg" />
+                                        {mobileView? (
+                                            <img className="rating-provider-image" src={googleLogo}/>
+                                        ): (
+                                            <img className="rating-provider-image" src="https://raosentcare.com/wp-content/uploads/2021/07/google-reviews1-150x150.jpg" />
+                                        )}
                                     </div>
                                     <div className="rating-container">
                                         <i className="material-icons-outlined rating-star">star</i>

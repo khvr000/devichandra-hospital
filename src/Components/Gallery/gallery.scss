@@ -9,6 +9,10 @@
 
     .gallery-title-wrapper {
       //text-align: center;
+
+        .gallery-title-helper {
+          color: #3065b5;
+        }
         .gallery-title {
           //font-weight: 600;
           font-size: 24px;
@@ -44,3 +48,46 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+    .gallery-container {
+
+        height: 500px;
+        padding: 0 10px;
+        overflow: hidden;
+        margin-top: 24px;
+
+        .gallery-title-wrapper {
+          //text-align: center;
+
+          .gallery-title-helper {
+            color: #3065b5;
+          }
+          .gallery-title {
+            //font-weight: 600;
+            font-size: 24px;
+          }
+        }
+
+        .gallery-wrapper {
+            display: flex;
+            align-items: center;
+            position: relative;
+            //overflow: hidden;
+
+            .gallery-item {
+
+                width: 400px;
+                height: 400px;
+                margin: 0 16px;
+
+                img {
+                    width: 400px;
+                    height: 400px;
+                    margin: 0 16px;
+                }
+            }
+        }
+
+
+    }
+}

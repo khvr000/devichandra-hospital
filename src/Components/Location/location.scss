@@ -5,6 +5,12 @@
     padding: 0 20px 0 20px;
     box-sizing: border-box;
 
+    .location-title-helper {
+      color: #3065b5;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
     .location-title {
       font-size: 24px;
       //font-weight: 600;
@@ -12,7 +18,8 @@
 
     .location-content {
       margin-top: 20px;
-      height: 665px;
+      width: 1050px;
+      height: 600px;
       cursor: pointer;
       border: 1px solid rgb(224, 224, 224);
 

@@ -54,3 +54,52 @@
 
 
 }
+
+@media only screen and (max-width: 768px) {
+    .about-doctor-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+
+        .about-doctor-title-wrapper {
+
+            .about-doctor-title {
+              font-size: 24px;
+            }
+
+
+        }
+
+        .about-doctor-content {
+            display: flex;
+            flex-direction: column-reverse;
+            border: 1px solid rgb(224, 224, 224);
+
+            .about-doctor-intro-wrapper {
+              padding-left: 4px;
+              padding-bottom: 4px;
+
+              .about-doctor-intro-title {
+                  font-size: 16px;
+                  font-weight: 600;
+                  padding: 0 0 8px 0;
+                }
+
+              .about-doctor-description {
+                font-size: 13px;
+              }
+
+            }
+
+            .about-doctor-intro-images {
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+            }
+
+        }
+    }
+}
