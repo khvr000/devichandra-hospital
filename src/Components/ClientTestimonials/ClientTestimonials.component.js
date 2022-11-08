@@ -52,7 +52,16 @@ class ClientTestimonialsComponent extends Component {
     ];
 
     componentDidMount() {
-        // this.timeOutHandler = setInterval(() => this.handleSliderClick('next'), 10000);
+
+        const mql = window.matchMedia('(max-width: 768px)');
+        let mobileView = mql.matches;
+
+        this.setState({
+            isMobileView: mobileView
+        });
+
+
+        this.timeOutHandler = setInterval(() => this.handleSliderClick('next'), 10000);
     }
 
     componentWillUnmount() {
@@ -119,8 +128,7 @@ class ClientTestimonialsComponent extends Component {
 
         const filteredData = this.getFilteredData();
 
-        const mql = window.matchMedia('(max-width: 768px)');
-        let mobileView = mql.matches;
+
 
         return (
             <div className="main-container" id="testimonials">
@@ -190,7 +198,7 @@ class ClientTestimonialsComponent extends Component {
                             <div className="testimonial-item-content">
                                 <div className="rating-wrapper">
                                     <div className="rating-provider">
-                                        {mobileView? (
+                                        {this.state.isMobileView? (
                                             <img className="rating-provider-image" src={googleLogo}/>
                                         ): (
                                             <img className="rating-provider-image" src="https://raosentcare.com/wp-content/uploads/2021/07/google-reviews1-150x150.jpg" />

@@ -51,6 +51,14 @@ class GalleryComponent extends Component {
     ];
 
     componentDidMount() {
+
+        const mql = window.matchMedia('(max-width: 768px)');
+        let mobileView = mql.matches;
+
+        this.setState({
+            isMobileView: mobileView
+        });
+
         this.interval = setInterval(() => this.handleSliderClick('prev'), 1000);
     }
 
@@ -83,13 +91,13 @@ class GalleryComponent extends Component {
 
     render() {
 
-        const mql = window.matchMedia('(max-width: 768px)');
-        let mobileView = mql.matches;
+        // const mql = window.matchMedia('(max-width: 768px)');
+        // let mobileView = mql.matches;
         const { visibleIndices } = this.state;
 
         const filteredData = this.getFilteredData();
 
-        if (mobileView) {
+        if (this.state.isMobileView) {
             return (
                 <div className="gallery-container" id="gallery">
                     <div className="gallery-title-wrapper">
