@@ -42,7 +42,7 @@ class GeneralInformationComponent extends Component {
 
     infoComponent = (infoItem) => {
         return (
-            <div className="info-component-container" onClick={this.handleLocationClick}>
+            <div className="info-component-container" onClick={this.handleLocationClick} key={infoItem.className}>
                 <div className={`icon-wrapper ${infoItem.icon}`} />
                 <div className="info-item-content-wrapper">
                     <div className="info-item-header-text">

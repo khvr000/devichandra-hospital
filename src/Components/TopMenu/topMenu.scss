@@ -77,13 +77,13 @@
     .top-menu {
       //width: 1200px;
       //margin: 0 auto;
-      padding: 20px 0px;
       //box-sizing: border-box;
 
       display: flex;
 
         .hospital-title-wrapper {
           width: 40%;
+          padding: 20px 0;
           font-size: 24px;
           font-weight: 600;
           color: #ffffff;
@@ -96,6 +96,16 @@
           align-items: center;
           color: #ffffff;
           font-weight: 600;
+
+          .menu-item {
+            padding: 20px 0;
+            transition: border-bottom 0.3s ease;
+          }
+
+          .active {
+            border-bottom: 1px solid white;
+            transition: border-bottom 0.3s ease;
+          }
         }
 
     }

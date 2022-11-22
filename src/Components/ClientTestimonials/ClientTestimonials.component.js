@@ -109,7 +109,7 @@ class ClientTestimonialsComponent extends Component {
                 }
                 return nextIndex;
             });
-            console.log('updatedIndices', updatedIndices);
+            // console.log('updatedIndices', updatedIndices);
             this.setState({
                 visibleIndices: updatedIndices
             });
@@ -153,7 +153,7 @@ class ClientTestimonialsComponent extends Component {
                            <i className="material-icons-outlined rating-star">star</i>
                            <i className="material-icons-outlined rating-star">star</i>
                            <i className="material-icons-outlined rating-star">star</i>
-                           <i className="material-icons-outlined rating-star">star</i>
+                           <i className="material-icons-outlined rating-star">star_half</i>
                        </div>
                    </div>
                    {/*<div className="horizontal-separator" />*/}
@@ -168,7 +168,7 @@ class ClientTestimonialsComponent extends Component {
                            <i className="material-icons-outlined rating-star">star</i>
                            <i className="material-icons-outlined rating-star">star</i>
                            <i className="material-icons-outlined rating-star">star</i>
-                           <i className="material-icons-outlined rating-star">star</i>
+                           <i className="material-icons-outlined rating-star">star_half</i>
                        </div>
                    </div>
                </div>

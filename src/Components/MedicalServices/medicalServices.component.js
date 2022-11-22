@@ -80,7 +80,7 @@ class MedicalServicesComponent extends Component {
                 <div className="medical-services-content">
                     {
                         this.servicesData.map(serviceData => (
-                            <div className="service-item-wrapper">
+                            <div className="service-item-wrapper" key={serviceData.title}>
                                 <img
                                     className="service-item-image"
                                     alt="wetewt"
@@ -93,14 +93,11 @@ class MedicalServicesComponent extends Component {
                                 </div>
                                 {/*<div className="separator" />*/}
                                 <div className="service-description">
-                                    {serviceData.description.map(des => (
-                                        <>
-                                            <div className="text-wrapper">
-                                                <div className="dot-character" />
-                                                <div>{des}</div>
-                                            </div>
-                                        </>
-
+                                    {serviceData.description.map((des, i) => (
+                                        <div className="text-wrapper" key={i}>
+                                            <div className="dot-character" />
+                                            <div>{des}</div>
+                                        </div>
                                     ))}
                                 </div>
                             </div>

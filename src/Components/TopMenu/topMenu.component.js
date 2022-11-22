@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Logo from "../../assets/Logo.png";
+import classnames from "classnames";
 import "./topMenu.scss";
 
 class TopMenuComponent extends Component {
@@ -45,16 +46,20 @@ class TopMenuComponent extends Component {
     }
 
     handleMenuItemClick = (id) => {
+        console.log(id);
 
-        const yOffset = -150;
+        const yOffset = -106;
         const element = document.getElementById(id);
-        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        const y = element.offsetTop;
+        const ele = document.getElementById('app-container');
+        ele.scrollTop = y + yOffset;
+        // document.getElementById('app-container').scrollTo({top: y, behavior: 'smooth'});
 
-        window.scrollTo({top: y, behavior: 'smooth'});
 
     }
 
     render() {
+        const { activeMenuItem } = this.props;
         return (
 
             <>
@@ -97,7 +102,8 @@ class TopMenuComponent extends Component {
                                 <div className="menu-items-wrapper">
                                     {this.menuData.map(menuDataItem => (
                                         <div
-                                            className="menu-item"
+                                            key={menuDataItem.id}
+                                            className={classnames('menu-item', {'active': activeMenuItem === menuDataItem.id})}
                                             onClick={() => this.handleMenuItemClick(menuDataItem.id)}
                                         >
                                             {menuDataItem.name}

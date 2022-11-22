@@ -28,7 +28,7 @@ class HospitalStatsComponent extends Component {
                 <div className="stats-content-wrapper">
 
                     {this.data.map(dataItem => (
-                        <div className="stat-item">
+                        <div className="stat-item" key={dataItem.title}>
                             <div className="stat-item-value">
                                 {dataItem.value}
                             </div>

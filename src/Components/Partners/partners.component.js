@@ -43,7 +43,7 @@ class PartnersComponent extends Component {
 
                     <div className="partners-content">
                         {this.partnersData.map(partnerDataItem => (
-                            <div className="partners-content-item">
+                            <div className="partners-content-item" key={partnerDataItem.name}>
                                 <img src={partnerDataItem.url} />
                             </div>
                         ))}

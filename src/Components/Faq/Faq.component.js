@@ -42,6 +42,7 @@ class FaqComponent extends Component {
                 <div className="faq-content">
                     {this.data.map(dataItem => (
                         <FaqItemComponent
+                            key={dataItem.question}
                             question={dataItem.question}
                             description={dataItem.description}
                         />

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import imageTwo from "../../assets/services/image2.webp";
+import imageTwo from "../../assets/about/DSC_0299.jpg";
 
 import "./aboutDoctor.scss";
 

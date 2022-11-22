@@ -1,4 +1,14 @@
 import React, {Component} from 'react';
+import image1 from "../../assets/gallery/DSC_0286.jpg";
+import image2 from "../../assets/gallery/DSC_0284.jpg";
+import image3 from "../../assets/gallery/DSC_0287.jpg";
+import image4 from "../../assets/gallery/DSC_0290.jpg";
+import image5 from "../../assets/gallery/DSC_0291.jpg";
+import image6 from "../../assets/gallery/DSC_0293.jpg";
+import image7 from "../../assets/gallery/DSC_0296.jpg";
+import image8 from "../../assets/gallery/DSC_0302.jpg";
+import image9 from "../../assets/gallery/DSC_0304.jpg";
+
 import "./gallery.scss";
 
 const url = "https://i.picsum.photos/id/34/200/300.jpg?hmac=K076uH4zC5xneqvhRayjS90G00xjPsR7eL_ShGEr6rs";
@@ -8,46 +18,62 @@ const url3 = 'https://image1.jdomni.in/library/03072019/44/EB/FB/7EE81B067F6EA19
 class GalleryComponent extends Component {
 
     state = {
-        visibleIndices: [0, 1, 2]
+        visibleIndices: [0, 1, 2],
+        isMobileView: false
     }
 
-    data = [
+    data2 = [
         {
             url : url,
-            name: '',
+            name: '1',
         },
         {
             url : url2,
-            name: '',
+            name: '2',
         },
         {
             url : url3,
-            name: '',
+            name: '3',
         },
-        // {
-        //     url : url,
-        //     name: '',
-        // },
-        // {
-        //     url : url,
-        //     name: '',
-        // },
-        // {
-        //     url : url,
-        //     name: '',
-        // },
-        // {
-        //     url : url,
-        //     name: '',
-        // },
-        // {
-        //     url : url2,
-        //     name: '',
-        // },
-        // {
-        //     url : url3,
-        //     name: '',
-        // },
+    ];
+
+    data = [
+        {
+            url : image7,
+            name: '1',
+        },
+        {
+            url : image2,
+            name: '2',
+        },
+        {
+            url : image3,
+            name: '3',
+        },
+        {
+            url : image4,
+            name: '4',
+        },
+        {
+            url : image5,
+            name: '5',
+        },
+        {
+            url : image6,
+            name: '6',
+        },
+        {
+            url : image1,
+            name: '7',
+        },
+        {
+            url : image8,
+            name: '8',
+        },
+        {
+            url : image9,
+            name: '9',
+        },
     ];
 
     componentDidMount() {
@@ -59,7 +85,9 @@ class GalleryComponent extends Component {
             isMobileView: mobileView
         });
 
-        this.interval = setInterval(() => this.handleSliderClick('prev'), 1000);
+        if(mobileView) {
+            this.interval = setInterval(() => this.handleSliderClick('prev'), 1000);
+        }
     }
 
     getFilteredData = () => {
@@ -134,7 +162,7 @@ class GalleryComponent extends Component {
                     </div>
                     <div className="gallery-wrapper">
                         {this.data.map(dataItem => (
-                            <div className="gallery-item">
+                            <div className={`gallery-item ${dataItem.name}`} key={dataItem.url}>
                                 <img src={dataItem.url} />
                             </div>
                         ))}

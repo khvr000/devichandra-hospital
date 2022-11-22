@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import secondImage from "../../assets/about/DSC_0297.jpg";
+import firstimage from "../../assets/gallery/DSC_0293.jpg";
+import finalImage from "../../assets/about/Untitled (2).jpeg";
+import tryImage from "../../assets/about/slider2_kdhv2d.webp";
+import classNames from 'classnames';
+
 import "./IntroductoryImages.scss";
 
 class IntroductoryImagesComponent extends Component {
@@ -19,17 +25,17 @@ class IntroductoryImagesComponent extends Component {
     }
 
 
-    firstImage = "https://res.cloudinary.com/rajkumarpyla/image/upload/v1613379237/magnasv/images/slider2_kdhv2d.webp";
-    secondImage = "https://res.cloudinary.com/rajkumarpyla/image/upload/v1613373728/magnasv/images/mobile-slider1.png";
+    // firstImage = "https://res.cloudinary.com/rajkumarpyla/image/upload/v1613379237/magnasv/images/slider2_kdhv2d.webp";
+    // secondImage = "https://res.cloudinary.com/rajkumarpyla/image/upload/v1613373728/magnasv/images/mobile-slider1.png";
 
     render() {
         return (
             <div className="introductory-container" id="home">
 
                 {this.state.initial ? (
-                        <div key="one">
+                        <>
                             <div className="introductory-image-wrapper">
-                                <img src={this.firstImage} />
+                                <img src={tryImage} />
                             </div>
 
                             <div className="introductory-content-wrapper">
@@ -53,11 +59,11 @@ class IntroductoryImagesComponent extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </>
                     ) : (
-                        <div key="two">
-                            <div className="introductory-image-wrapper">
-                                <img src={this.firstImage} />
+                        <>
+                            <div className={classNames('introductory-image-wrapper', {'adjust-image': !this.state.initial})}>
+                                <img src={finalImage} />
                             </div>
 
                             <div className="introductory-content-wrapper">
@@ -81,7 +87,7 @@ class IntroductoryImagesComponent extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </>
                     )
                 }
             </div>
