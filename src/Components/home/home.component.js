@@ -23,7 +23,7 @@ const HomeComponent = () => {
     const homeRef = React.useRef();
     const menuItem = [servicesRef];
 
-    const menuIds = ['home', 'services', 'aboutUs', 'testimonials', 'gallery', 'faq', 'partners'];
+    const menuIds = ['home', 'services', 'aboutUs', 'testimonials', 'gallery', 'faq'];
 
     const [activeMenuItem, setActiveMenuItem] = useState(menuIds[0]);
 
@@ -74,7 +74,7 @@ const HomeComponent = () => {
             <SeparatorComponent />
             <LocationComponent />
             <SeparatorComponent />
-            <PartnersComponent />
+            {/*<PartnersComponent />*/}
             <div className="footer">
                 <div className="footer-desc">
                     Copyrights 2022 - 2023, Sri Devichandra ENT Hospital. All Rights Reserved.
