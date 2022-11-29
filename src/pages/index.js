@@ -1,21 +1,7 @@
 import * as React from "react"
-import GeneralInformationComponent from "../Components/GeneralInformation/GeneralInformation.component";
-import HospitalInformationComponent from "../Components/HospitalInformation/hospitalInformation.component";
-import HospitalServicesInformationComponent from "../Components/HospitalServicesInformation/hospitalServicesnformation.component";
 import "./index.css";
 import "./index2.css";
-import MedicalServicesComponent from "../Components/MedicalServices/medicalServices.component";
-import ClientTestimonialsComponent from "../Components/ClientTestimonials/ClientTestimonials.component";
-import HospitalStatsComponent from "../Components/HospitalStats/hospitalStats.component";
-import FaqComponent from "../Components/Faq/Faq.component";
-import GalleryComponent from "../Components/Gallery/gallery.component";
-import SeparatorComponent from "../Components/separator/separator.component";
-import LocationComponent from "../Components/Location/location.component";
-import PartnersComponent from "../Components/Partners/partners.component";
-import TopMenuComponent from "../Components/TopMenu/topMenu.component";
-import IntroductoryImagesComponent from "../Components/IntroductoryImages/IntroductoryImages.component";
-import AboutDoctorComponent from "../Components/AboutDoctor/aboutDoctor.component";
-import {useRef} from "react";
+import HomeComponent from "../Components/home/home.component";
 
 // styles
 const pageStyles = {
@@ -149,35 +135,8 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
       <title>Home Page</title>
-      {/*<h1 style={headingStyles}>*/}
-      {/*  Welcome*/}
-      {/*</h1>*/}
       <div style={paragraphStyles}>
-        <TopMenuComponent />
-        <IntroductoryImagesComponent />
-        {/*<SeparatorComponent />*/}
-        <GeneralInformationComponent />
-        <HospitalInformationComponent />
-        {/*<HospitalServicesInformationComponent />*/}
-        <SeparatorComponent />
-        <MedicalServicesComponent />
-        <SeparatorComponent />
-        <AboutDoctorComponent />
-        <ClientTestimonialsComponent />
-        <HospitalStatsComponent />
-        <GalleryComponent />
-        <SeparatorComponent />
-        <FaqComponent />
-        <SeparatorComponent />
-        <LocationComponent />
-        <SeparatorComponent />
-        <PartnersComponent />
-        <div className="footer">
-          <div className="footer-desc">
-            Copyrights 2022 - 2023, Sri Devichandra ENT Hospital. All Rights Reserved.
-          </div>
-
-        </div>
+          <HomeComponent />
       </div>
     </main>
   )
