@@ -17,7 +17,7 @@ import debounce from "../../utils/common-utils";
 
 
 
-const HomeComponent = () => {
+const HomeComponent = (props) => {
 
     const servicesRef = React.useRef();
     const homeRef = React.useRef();
@@ -53,11 +53,12 @@ const HomeComponent = () => {
 
 
     const debounced__handleScroll = debounce(handleScroll)
+    const { isMobileView } = props;
 
     return (
         <div onScroll={(event) => debounced__handleScroll(event, menuItem)} id="app-container">
             <TopMenuComponent activeMenuItem={activeMenuItem}/>
-            <IntroductoryImagesComponent />
+            <IntroductoryImagesComponent isMobileView={isMobileView}/>
             {/*<SeparatorComponent />*/}
             <GeneralInformationComponent />
             <HospitalInformationComponent />
@@ -72,8 +73,12 @@ const HomeComponent = () => {
             <SeparatorComponent />
             <FaqComponent />
             <SeparatorComponent />
-            <LocationComponent />
-            <SeparatorComponent />
+            {!isMobileView && (
+                <>
+                    <LocationComponent />
+                    <SeparatorComponent />
+                </>
+            )}
             {/*<PartnersComponent />*/}
             <div className="footer">
                 <div className="footer-desc">

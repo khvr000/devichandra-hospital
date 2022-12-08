@@ -72,6 +72,82 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+  .faq-container {
+    padding: 0 10px;
+
+    .faq-content {
+      width: 100%;
+      padding-top: 30px;
+
+      .faq-item {
+
+        border: 1px solid #e0e0e0;
+        padding: 0 22px;
+        margin-bottom: 2px;
+
+        transition: border-top 300ms ease-in-out;
+
+        &.open-container {
+          //border-top: 1px solid #3065b5;
+          border-top-color: #3065b5;
+          //border: 1px;
+          //border-color: red;
+          //transition: border-color 500s ease-in-out;
+
+        }
+
+        .faq-item-title-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          :hover {
+            cursor: pointer;
+            color: #3065B4;
+          }
+
+          .faq-item-title {
+            font-size: 16px;
+            padding: 14px 0;
+            color: #222222;
+          }
+          i {
+            font-size: 16px;
+          }
+        }
+
+        .faq-item-description {
+          font-size: 13px;
+          max-height: 0;
+          overflow: hidden;
+          padding: 0;
+          transition: max-height 500ms ease-in-out, padding 500ms ease-in-out;
+        }
+
+        .container-open {
+          max-height: 100px;
+          padding: 5px 0 38px;
+          transition: max-height 500ms ease-in-out, padding 500ms ease-in-out;
+        }
+      }
+    }
+
+  }
+
+  .faq-title-wrapper {
+      .faq-heading {
+        color: #3065b5;
+      }
+
+      .faq-title-description {
+        font-size: 24px;
+      }
+
+  }
+
+}
+
 
 @keyframes borderColor
 {

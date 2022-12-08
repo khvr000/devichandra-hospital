@@ -2,6 +2,7 @@ import * as React from "react"
 import "./index.css";
 import "./index2.css";
 import HomeComponent from "../Components/home/home.component";
+import {useEffect, useState} from "react";
 
 // styles
 const pageStyles = {
@@ -131,12 +132,22 @@ const links = [
 
 // markup
 const IndexPage = () => {
+
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect( () => {
+      const mql = window.matchMedia('(max-width: 768px)');
+      let mobileView = mql.matches;
+      setIsMobileView(mobileView)
+  }, []);
+
+
   return (
     <main style={pageStyles}>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
       <title>Home Page</title>
       <div style={paragraphStyles}>
-          <HomeComponent />
+          <HomeComponent isMobileView={isMobileView}/>
       </div>
     </main>
   )
