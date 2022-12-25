@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import secondImage from "../../assets/about/DSC_0297.jpg";
 import firstimage from "../../assets/gallery/DSC_0293.jpg";
 import finalImage from "../../assets/about/Untitled (2).jpeg";
 import tryImage from "../../assets/about/slider2_kdhv2d.webp";
 
-import finalImageMobile from "../../assets/about/Untitled (2).jpeg";
 import secondImageMobile from "../../assets/about/image_mobile.webp";
 import classNames from 'classnames';
 
