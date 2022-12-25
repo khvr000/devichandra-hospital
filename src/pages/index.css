@@ -1126,16 +1126,3 @@
 /*        transform: rotate(359deg);*/
 /*    }*/
 /*}*/
-.footer {
-    border-top: 1px solid rgb(224, 224, 224);
-    background-color: #222222;
-    color: #646464;
-    font-size: 13px;
-}
-
-.footer-desc {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 16px 20px;
-    box-sizing: border-box;
-}

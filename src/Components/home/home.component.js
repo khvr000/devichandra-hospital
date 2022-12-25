@@ -57,7 +57,7 @@ const HomeComponent = (props) => {
 
     return (
         <div onScroll={(event) => debounced__handleScroll(event, menuItem)} id="app-container">
-            <TopMenuComponent activeMenuItem={activeMenuItem}/>
+            <TopMenuComponent activeMenuItem={activeMenuItem} isMobileView={isMobileView} />
             <IntroductoryImagesComponent isMobileView={isMobileView}/>
             {/*<SeparatorComponent />*/}
             <GeneralInformationComponent />
