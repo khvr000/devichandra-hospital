@@ -95,8 +95,10 @@ class TopMenuComponent extends Component {
                                             Jd
                                         </div>
                                         <div className="number">
-                                            <i className="material-icons-outlined">phone_in_talk</i>
-                                            9848421036
+                                            <a href="tel:555-555-5555">
+                                                <i className="material-icons-outlined">phone_in_talk</i>
+                                                9848421036
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="top-menu-right" onClick={() => this.handleIconClick(this.locationUrl)}>

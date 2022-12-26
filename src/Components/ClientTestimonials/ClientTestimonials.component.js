@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import googleLogo from '../../assets/googleLogoImage.jpg';
+import googleLogo2 from "../../assets/google-logo.png"
 import justDialLogo from "../../assets/ju7956j474-justdial-logo-justdial-logo-download-vector.png";
 
 import "./ClientTestimonials.scss";
@@ -145,7 +146,7 @@ class ClientTestimonialsComponent extends Component {
                <div className="hospital-rating">
                    <div className="hospital-rating-google">
                        <div className="hospital-rating-google-name">
-                           <img className="rating-provider-image" src={googleLogo} />
+                           <img className="rating-provider-image" src={googleLogo2} />
                        </div>
                        <div className="actual-rating">4.6</div>
                        <div className="rating-container">

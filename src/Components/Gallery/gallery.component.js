@@ -86,7 +86,7 @@ class GalleryComponent extends Component {
         });
 
         if(mobileView) {
-            this.interval = setInterval(() => this.handleSliderClick('prev'), 1000);
+            this.interval = setInterval(() => this.handleSliderClick('prev'), 2500);
         }
     }
 

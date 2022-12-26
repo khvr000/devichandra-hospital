@@ -49,6 +49,11 @@
         color: #2a2d32;
         font-size: 20px;
         word-break: break-word;
+
+        .mobile-clickable-wrap {
+            color: #2a2d32;
+            text-decoration: none;
+        }
     }
 
     /*.email {*/
@@ -106,6 +111,11 @@
         color: #2a2d32;
         font-size: 20px;
         word-break: break-all;
+
+        .mobile-clickable-wrap {
+            color: #2a2d32;
+            text-decoration: none;
+        }
     }
 
     /*.email {*/

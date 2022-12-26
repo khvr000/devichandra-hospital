@@ -222,7 +222,7 @@
     .hospital-rating-google-name {
         display: flex;
         .rating-provider-image {
-            width: 86px;
+            //width: 86px;
             height: 35px;
         }
     }
@@ -473,10 +473,10 @@
             justify-content: space-around;
         }
 
-        .rating-provider-image {
-            width: 75px;
-            height: 75px;
-        }
+        //.rating-provider-image {
+        //    width: 75px;
+        //    height: 75px;
+        //}
 
         .hospital-rating {
             display: flex;
@@ -493,13 +493,18 @@
             opacity: 0.85;
         }
 
-        .hospital-rating-google-name {
-            display: flex;
-            .rating-provider-image {
-                width: 86px;
-                height: 35px;
+        .hospital-rating-google {
+            .hospital-rating-google-name {
+                display: flex;
+                .rating-provider-image {
+                    //width: 86px;
+                    height: 35px;
+                    padding: 4px;
+                }
             }
         }
+
+
 
         .hospital-rating-justdail-name {
             margin: 0 8px;

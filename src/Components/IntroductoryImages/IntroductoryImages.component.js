@@ -129,7 +129,7 @@ class IntroductoryImagesComponent extends Component {
                                         <div className="introductory-content">
                                             <div className="it-title">
                                                 <div className="it-title-one">
-                                                    Welcome to Sri Devichandra ENT hospital
+                                                    WELCOME TO SRI DEVICHANDRA ENT HOSPITAL
                                                 </div>
                                                 <div className="it-title-two">
                                                     Dr. G. Chandra Shekar
@@ -139,7 +139,7 @@ class IntroductoryImagesComponent extends Component {
                                                 </div>
                                             </div>
                                             <div className="it-description">
-                                                Senior ENT Consultant with 30+ years of experience and 100% success rate
+                                                Senior ENT consultant with 30+ years of experience and 100% success rate
                                             </div>
                                         </div>
                                     </>
