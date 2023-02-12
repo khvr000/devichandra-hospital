@@ -79,7 +79,7 @@ const HomeComponent = (props) => {
                     <SeparatorComponent />
                 </>
             )}
-            {/*<PartnersComponent />*/}
+            <PartnersComponent />
             <div className="footer">
                 <div className="footer-desc">
                     Copyrights 2022 - 2023, Sri Devichandra ENT Hospital. All Rights Reserved.

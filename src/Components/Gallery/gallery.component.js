@@ -18,7 +18,7 @@ const url3 = 'https://image1.jdomni.in/library/03072019/44/EB/FB/7EE81B067F6EA19
 class GalleryComponent extends Component {
 
     state = {
-        visibleIndices: [0, 1, 2],
+        visibleIndices: [0, 1, 2,3, 4, 5,6,7 ,8],
         isMobileView: false
     }
 
@@ -107,8 +107,8 @@ class GalleryComponent extends Component {
             if(nextIndex < 0) {
                 return nextIndex+ 3;
             }
-            if (nextIndex > 2) {
-                return nextIndex - 3;
+            if (nextIndex > 8) {
+                return nextIndex - 9;
             }
             return nextIndex;
         });

@@ -15,13 +15,17 @@
 
   .partners-content {
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
+    justify-content: flex-start;
+
     //flex-wrap: wrap;
 
     //animation: 4s linear 0s infinite normal none running partner-animation;
 
     .partners-content-item {
-      width: 20%;
+      width: 160px;
+      padding: 15px 30px;
       img {
         width: 100%;
         height: 100%;
@@ -30,6 +34,32 @@
   }
 
 }
+
+
+@media only screen and (max-width: 768px) {
+
+  .partners-container {
+    padding: 0 10px;
+  }
+
+  .partners-content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+
+  .partners-content-item {
+    width: 100px;
+    padding: 15px 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
 
 @keyframes partner-animation {
   0% {

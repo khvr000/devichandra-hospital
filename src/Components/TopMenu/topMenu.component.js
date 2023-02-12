@@ -35,7 +35,7 @@ class TopMenuComponent extends Component {
             id: 'faq',
         },
         {
-            name: 'Partners',
+            name: 'Empanelment',
             id: 'partners',
         },
     ];
