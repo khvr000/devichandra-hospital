@@ -133,7 +133,7 @@ const links = [
 // markup
 const IndexPage = () => {
 
-  const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(undefined);
 
   useEffect( () => {
       const mql = window.matchMedia('(max-width: 768px)');
@@ -142,8 +142,14 @@ const IndexPage = () => {
   }, []);
 
 
+  if (typeof isMobileView !== "boolean") {
+    return null;
+  }
+
+
   return (
     <main style={pageStyles}>
+      {console.log('isMobileView isMobileView', isMobileView)}
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
       <title>Home Page</title>
       <div style={paragraphStyles}>
