@@ -11,6 +11,7 @@ import relianceLogo from "../../assets/partners/reliance_logo.png";
 import safewayInsurance from "../../assets/partners/safeway_insurance.png";
 import nationalInsurance from "../../assets/partners/national_insurance.jpeg";
 import sbiLogo from "../../assets/partners/SBI_Logo.png";
+import mediAssist from "../../assets/partners/medi-assist-logo.svg";
 
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -23,63 +24,68 @@ class PartnersComponent extends Component {
     partnersData = [
         {
             url: starHealth,
-            alt: '',
+            alt: 'Star Health Insurance',
             name: 'Star Health'
         },
         {
             url: paramount,
-            alt: '',
+            alt: 'Paramount Health Insurance',
             name: 'Paramount'
         },
         {
             url: iffcoTokio,
-            alt: '',
+            alt: 'IffcoTokio Health Insurance',
             name: 'IffcoTokio'
         },
         {
             url: mdIndia,
-            alt: '',
+            alt: 'MD India Health Insurance',
             name: 'MD India'
         },
         {
             url: maxBupa,
-            alt: '',
+            alt: 'Niva Max Bupa Health Insurance',
             name: 'Max Bupa'
         },
         {
             url: cigna,
-            alt: '',
+            alt: 'Cigna Health Insurance',
             name: 'Cigna'
         },
         {
             url: ericssion,
-            alt: '',
+            alt: 'Ericssion Health Insurance',
             name: 'Ericssion'
         },
         {
             url: newFhpl,
-            alt: '',
+            alt: 'Fhpl Health Insurance',
             name: 'new Fhpl'
         },
         {
             url: relianceLogo,
-            alt: '',
+            alt: 'Reliance Health Insurance',
             name: 'Reliance Logo'
         },
         {
             url: safewayInsurance,
-            alt: '',
+            alt: 'Safeway Insurance',
             name: 'Safeway Insurance'
         },
         {
             url: nationalInsurance,
-            alt: '',
+            alt: 'National Insurance',
             name: 'National Insurance'
         },
         {
             url: sbiLogo,
-            alt: '',
+            alt: 'Sbi Health Insurance',
             name: 'Sbi Logo'
+        },
+        {
+            url: mediAssist,
+            alt: 'Medi Assist Health Insurance',
+            name: 'Medi Assist'
         }
 
     ];
@@ -95,7 +101,7 @@ class PartnersComponent extends Component {
                     <div className="partners-content">
                         {this.partnersData.map(partnerDataItem => (
                             <div className="partners-content-item" key={partnerDataItem.name}>
-                                <img src={partnerDataItem.url} />
+                                <img src={partnerDataItem.url} alt={partnerDataItem.alt} />
                             </div>
                         ))}
 
